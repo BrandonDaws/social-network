@@ -10,8 +10,9 @@ const { getAllThoughts,
 //api/thoughts
 router
     .route('/')
-    .get(getAllThoughts)
-    .post(addThoughts);
+    .post(addThoughts)
+    .get(getAllThoughts);
+    
 
 //api/thoughts/:id
 router

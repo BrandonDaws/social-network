@@ -37,7 +37,7 @@ const ThoughtsSchema = new Schema(
     {
      thoughtText:{
         type: String,
-        required: 'Must be between 1 and 280 characters',
+        required: true,
         minLength: 1,
         maxLength: 280
      },
@@ -48,7 +48,7 @@ const ThoughtsSchema = new Schema(
      },
      username:{
         type: String,
-        required: 'Username is Required!'
+        required: true
      },
      reactions:[ReactionSchema],  
     },
